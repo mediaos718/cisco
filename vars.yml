@@ -1,3 +1,0 @@
-configs dir: ./device-configuration
-ansible_ssh_user: 'admin'
-ansible_ssh_pass: 'Rionel718!'
