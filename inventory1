@@ -1,0 +1,9 @@
+[group1]
+172.16.83.130
+192.168.2.133
+
+[group1:vars]
+ansible_network_os=ios
+ansible_user=rionel
+ansible_password=rionel718!
+ansible_connection=network_cli

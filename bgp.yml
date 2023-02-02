@@ -1,0 +1,25 @@
+---
+
+- name: BGP Config
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: run show version on the routers
+      ios_command:
+      config:
+      bgp_as: 64496
+      router_id: 192.0.2.1
+      log_neighbor_changes: true
+      neighbors:
+      - neighbor: 203.0.113.5
+        remote_as: 64511
+        timers:
+          keepalive: 300
+          holdtime: 360
+          min_neighbor_holdtime: 360
+
+
+
+
+
