@@ -12,6 +12,7 @@
            - show ip route
            - show ip eigrp neighbors
            - show version
+
       register: config
 
     - name: save output to local directory
